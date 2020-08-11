@@ -35,6 +35,7 @@ const siteContent = {
     "contact-h4": "Contact",
     address: "123 Way 456 Street Somewhere, USA",
     phone: "1 (888) 888-8888",
+
     email: "sales@greatidea.io",
   },
   footer: {
@@ -46,5 +47,9 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
-const nav = document.querySelector('a')
-nav.set
+
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
+
+let midImg = document.getElementById("middle-img");
+midImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
