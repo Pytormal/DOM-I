@@ -47,9 +47,16 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
-
 let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
 let midImg = document.getElementById("middle-img");
 midImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+
+const aTags = document.querySelector('main-content');
+console.log(aTags)
+
+// aTags.forEach(e => {
+//   e.style.backgroundColor ="hotpink"
+// })
