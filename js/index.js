@@ -54,9 +54,60 @@ let midImg = document.getElementById("middle-img");
 midImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 
 
-const aTags = document.querySelector('main-content');
-console.log(aTags)
+const navBar = document.querySelectorAll('nav a');
+console.log(siteContent.nav["nav-item-1"])
 
+navBar[0].textContent = siteContent.nav["nav-item-1"];
+navBar[1].textContent = siteContent.nav["nav-item-2"];
+navBar[2].textContent = siteContent.nav["nav-item-3"];
+navBar[3].textContent = siteContent.nav["nav-item-4"];
+navBar[4].textContent = siteContent.nav["nav-item-5"];
+navBar[5].textContent = siteContent.nav["nav-item-6"];
 // aTags.forEach(e => {
 //   e.style.backgroundColor ="hotpink"
 // })
+
+
+const title = document.querySelector(".cta-text h1")
+console.log(siteContent.cta.h1)
+
+// title.textContent = siteContent.cta.h1 
+title.textContent = siteContent["cta"]["h1"]
+
+const button = document.querySelector(".cta-text button")
+console.log(siteContent.cta.button)
+
+button.textContent = siteContent['cta']['button']
+
+const subTitle = document.querySelectorAll('.text-content h4')
+console.log(subTitle)
+
+subTitle[0].textContent = siteContent['main-content']['features-h4']
+subTitle[1].textContent = siteContent['main-content']['about-h4']
+subTitle[2].textContent = siteContent['main-content']['services-h4']
+subTitle[3].textContent = siteContent['main-content']['product-h4']
+subTitle[4].textContent = siteContent['main-content']['vision-h4']
+
+
+const subContent = document.querySelectorAll('.text-content p')
+console.log(subContent)
+
+subContent[0].textContent = siteContent['main-content']['features-content']
+subContent[1].textContent = siteContent['main-content']['about-content']
+subContent[2].textContent = siteContent['main-content']['services-content']
+subContent[3].textContent = siteContent['main-content']['product-content']
+subContent[4].textContent = siteContent['main-content']['vision-content']
+
+const contact = document.querySelector('.contact h4')
+console.log(contact)
+
+contact.textContent = siteContent['contact']['contact-h4']
+
+const subContact = document.querySelectorAll('.contact p')
+subContact[0].textContent = siteContent['contact']['address']
+subContact[1].textContent = siteContent['contact']['phone']
+subContact[2].textContent = siteContent['contact']['email']
+
+const rightCopy = document.querySelector('footer p')
+rightCopy.textContent = siteContent['footer']['copyright']
+console.log(rightCopy)
